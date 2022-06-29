@@ -6,19 +6,66 @@ import PageChange from "components/PageChange/PageChange.js";
 
 import Navbar from "components/Navbars/navbar.js";
 import FooterSmall from "components/Footers/FooterSmall";
+import { auto } from "@popperjs/core";
 
 
 export default function About() {
     return (
         <>
+        
         <Navbar fixed />
+        <section >
+       
+            <div className="mt-10 pb-20 mb-5 bg-blueGray-200">
+                <h1 className="text-5xl text-center pt-2 pb-20 ">About</h1>
+            </div>
 
-        <h1>
-            hello
-        </h1>
+            <div>
+            <section className="pt-20 mt-20">
+          <div className="container mx-auto px-4">
+            <div className="relative flex flex-col min-w-0 break-words bg-orange-200 w-full mb-6 shadow-xl -mt-64 mx-auto" style={{width: '90%'}}>
+              <div className="px-6">
+                <div className="flex flex-wrap justify-center">
+                  <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                    
+                  </div>
+                  <div className="w-full lg:w-4/12 px-4 lg:order-1">
+                    <div className="flex justify-center py-4 lg:pt-4 pt-8">
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center mt-12">
+                  <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
+                    Community Connector was created to offset and provide assistance to struggling families in the community during the peak of Covid-19 in 2020.
+                  </h3>
+                  
+                </div>
+                <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
+                  <div className="flex flex-wrap justify-center">
+                    <div className="w-full lg:w-9/12 px-4">
+                      <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
+                        Founded by two high school students in the Bay Area, through Community Connector we have delivered groceries to people all around the Bay and have fundraised over $25k for global campaigns. We hope to continue our efforts with your help!
+                      </p>
+                      <a
+                        href="#pablo"
+                        className="font-normal text-lightBlue-500"
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Contact
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+            </div>
+
+        </section>
 
 
-
+            <FooterSmall />
         </>
     )
 }
