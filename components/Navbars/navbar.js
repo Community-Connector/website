@@ -41,20 +41,20 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link href='/contact'>
+                    <a
+                        className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                    >
+                    <i className="fab text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Previous Fundraisers</span>
+                    </a>
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link href='/about'>
                     <a
                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                     >
                     <i className="fab  text-lg leading-lg text-white opacity-75"></i><span className="ml-2">About</span>
-                    </a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href='/contact'>
-                    <a
-                        className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                    >
-                    <i className="fab text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact</span>
                     </a>
                 </Link>
               </li>

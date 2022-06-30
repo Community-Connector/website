@@ -28,18 +28,10 @@ export default function FooterSmall(props) {
               <ul className="flex flex-wrap list-none md:justify-end  justify-center ">
                 <li>
                   <a
-                    href="https://www.creative-tim.com?ref=nnjs-footer-small"
-                    className="text-black hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
-                  >
-                    Community Connector
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="https://www.creative-tim.com/presentation?ref=nnjs-footer-small"
                     className="text-black hover:scale-150 text-sm font-semibold block py-1 px-3"
                   >
-                    Donate
+                    Fundraiser
                   </a>
                 </li>
                 <li>
