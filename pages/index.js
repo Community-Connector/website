@@ -44,23 +44,10 @@ export default function Index() {
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20 bg-orange-200"
           style={{ transform: "translateZ(0)" }}
         >
-          <svg
-            className="absolute bottom-0 overflow-hidden bg-orange-200"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              className="text-orange"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
+          
         </div>
 
-        <div className="container mx-auto ">
+        <div className="container mx-auto justify-center">
           <div className="flex flex-wrap items-center">
             <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
@@ -130,9 +117,16 @@ export default function Index() {
         </div>
 
       <div>
+        
+      </div>
+
+        
+      </section>
+
+      <div>
       <div className="container mx-auto overflow-hidden pb-20">
           <div className="flex flex-wrap items-center">
-            <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
+            <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48 ml-10">
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                 <i className="fas fa-sitemap text-xl"></i>
               </div>
@@ -159,13 +153,6 @@ export default function Index() {
             </div>
           </div>
       </div>
-
-      <div>
-        
-      </div>
-
-        
-      </section>
       
      <Footersmall />
     </>
