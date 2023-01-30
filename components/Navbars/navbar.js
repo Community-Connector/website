@@ -41,7 +41,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href='/contact'>
+                <Link href='/previous-fundraisers'>
                     <a
                         className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                     >
