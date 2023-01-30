@@ -63,40 +63,40 @@ export default function About() {
             </div>
 
 
-  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-      <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Meet Our Team</h2>
+  <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+      <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Meet Our Team</h2>
       </div> 
 
 
-      <div class="grid grid-cols-4 grid-flow-col gap-4">
-          <div class="grid text-center text-gray-500 dark:text-gray-400">
-              <img class="mx-auto mb-4 w-36 h-36 rounded-full w-1/2" src="img/aalyan.jpeg" />
-              <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <div className="grid grid-cols-4 grid-flow-col gap-4">
+          <div className="grid text-center text-gray-500 dark:text-gray-400">
+              <img className="mx-auto mb-4 w-36 h-36 rounded-full w-1/2" src="img/aalyan.jpeg" />
+              <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">Aalyan Aamir</a>
               </h3>
               <p>Co-founder</p>
               
           </div>
-          <div class="grid text-center text-gray-500 dark:text-gray-400">
-              <img class="mx-auto mb-4 w-36 h-36 rounded-full w-1/2" src="img/kumel.png"/>
-              <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="grid text-center text-gray-500 dark:text-gray-400">
+              <img className="mx-auto mb-4 w-36 h-36 rounded-full w-1/2" src="img/kumel.png"/>
+              <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">Kumel Hasni</a>
               </h3>
               <p>Co-founder</p>
               
           </div>
-          <div class="grid text-center text-gray-500 dark:text-gray-400">
-              <img class="mx-auto mb-4 w-36 h-36 rounded-full w-1/2" src="img/zack.jpeg"/>
-              <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="grid text-center text-gray-500 dark:text-gray-400">
+              <img className="mx-auto mb-4 w-36 h-36 rounded-full w-1/2" src="img/zack.jpeg"/>
+              <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">Zack Ghanbari</a>
               </h3>
               <p>Co-director of Technology</p>
               
           </div>
-          <div class="grid text-center text-gray-500 dark:text-gray-400">
-              <img class="mx-auto mb-4 w-36 h-36 rounded-full w-1/2" src="img/alir.jpeg"/>
-              <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="grid text-center text-gray-500 dark:text-gray-400">
+              <img className="mx-auto mb-4 w-36 h-36 rounded-full w-1/2" src="img/alir.jpeg"/>
+              <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">Ali Rastegar</a>
               </h3>
               <p>Co-director of Technology</p>
