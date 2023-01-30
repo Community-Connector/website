@@ -6,8 +6,13 @@ export default function PreviousFundrasiers() {
         <>
             <Navbar fixed />
 
-            <div className="flex flex-col items-center justify-center min-h-screen py-2">
-            </div>
+            <section>
+                <div className="pt-12 pb-16 mb-5 bg-blueGray-200">
+                    <h1 className="text-5xl text-center pt-2 pb-20 ">Previous Fundraisers</h1>
+                </div>
+
+                
+            </section>
 
             <Footersmall />
         </>
