@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -38,6 +40,17 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --primary: #EE6F1D;
+  --primary-dark: #BE5900;
+  --primary-light: #FFA35C;
+
+  --secondary: #fbfdfb;
+
+
+
+  --font-family-rubik: 'Rubik', sans-serif;
+
 }
 
 @media (prefers-color-scheme: dark) {
