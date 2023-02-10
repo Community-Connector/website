@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import { useEffect, useState } from 'react'
 
-import Nav from '../components/Nav/Nav'
+import Nav, { NavPlaceholder } from '../components/Nav/Nav'
 
 export default function App({ Component, pageProps }) {
 
@@ -36,6 +36,7 @@ export default function App({ Component, pageProps }) {
       <title>{title}</title>
     </Head>
       <Nav />
+      <NavPlaceholder />
       <Component {...pageProps} />
     </>
   )

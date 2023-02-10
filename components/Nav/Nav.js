@@ -59,4 +59,14 @@ const NavItem = ({ name, link }) => {
         )
 }
 
-export default Nav
+// This is a placeholder component that is used to keep the layout consistent
+const NavPlaceholder = () => {
+    return (
+        <div className={styles.placeholder} />
+    )
+}
+
+
+
+export default Nav 
+export { NavPlaceholder };
