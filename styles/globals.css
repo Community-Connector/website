@@ -48,6 +48,7 @@
 
   --secondary: #fbfdfb;
   --secondary-dark: #eeeeee;
+  --secondary-darker: #c5c5c5;
 
   --tertiary: #2c6d89;
   --tertiary-dark: #22546b;
@@ -61,6 +62,27 @@
 
 .page {
   background-color: var(--secondary);
+}
+
+/* Modify the scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--secondary-darker);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }
 
 @media (prefers-color-scheme: dark) {
