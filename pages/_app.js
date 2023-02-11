@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 
 import Nav, { NavPlaceholder } from '../components/Nav/Nav'
+import Footer from '@/components/Footer/Footer'
 
 export default function App({ Component, pageProps }) {
 
@@ -38,6 +39,7 @@ export default function App({ Component, pageProps }) {
       <Nav />
       <NavPlaceholder />
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }
