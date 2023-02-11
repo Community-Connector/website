@@ -1,10 +1,10 @@
-
+import PageTitle from "@/components/PageTitle/PageTitle"
 
 const Contact = () => {
 
     return (
         <div>
-            <h1>Contact</h1>
+            <PageTitle title="Contact Us" />
         </div>
     )
 }

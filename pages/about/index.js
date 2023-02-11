@@ -1,8 +1,10 @@
+import PageTitle from "@/components/PageTitle/PageTitle"
+
 const About = () => {
 
     return (
         <div>
-            <h1>About</h1>
+            <PageTitle title="About Us" />
         </div>
     )
 }

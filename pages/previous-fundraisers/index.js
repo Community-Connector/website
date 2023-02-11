@@ -1,9 +1,9 @@
-
+import PageTitle from "@/components/PageTitle/PageTitle"
 
 const PreviousFundraisers = () => {
     return (
         <div>
-            <h1>Previous Fundraisers</h1>
+            <PageTitle title="Previous Fundraisers" />
         </div>
     )
 }
