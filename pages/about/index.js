@@ -9,25 +9,25 @@ const About = () => {
             name: "Aalyan Aamir",
             position: "Co-Founder",
             imageSrc: "https://warm-kashata-49ba24.netlify.app/img/aalyan.jpeg",
-            description: "Add your description here."
+            description: "Mountain biker and snowboarder who hopes to major in physics. Aalyan is motivated to help  anyone in need any way he can."
         },
         {
             name: "Kumel Hasni",
             position: "Co-Founder",
             imageSrc: "https://rekompile.org/_next/image?url=%2Fteam%2Fkumel%20hasni.png&w=1920&q=75",
-            description: "Add your description here."
+            description: "Cybersecurity enthusiast who enjoys soccer, running, and reading. Kumel is driven to serve the community."
         },
         {
             name: "Zack Ghanbari",
             position: "Co-Director of Technology",
             imageSrc: "https://rekompile.org/_next/image?url=%2Fteam%2Fzackaria%20ghanbari.jpg&w=1920&q=75",
-            description: "Add your description here."
+            description: "Future CS major who has pursued areas from robotics to web development. Zackaria has a passion for helping others."
         },
         {
             name: "Ali Rastegar",
             position: "Co-Director of Technology",
             imageSrc: "https://rekompile.org/_next/image?url=%2Fteam%2Fali%20rastegar.png&w=1920&q=75",
-            description: "Add your description here."
+            description: " Ali Rastegar is the Co-Director of Technology, because he co-des everyday 😀"
         }
     ]
 
