@@ -63,9 +63,20 @@
 .page {
   background-color: var(--secondary);
 
+  /* Set height while accounting for the Nav/Footer */
   min-height: 86vh;
-
   height: auto;
+
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+/* For mobile reduce padding */
+@media screen and (max-width: 768px) {
+  .page {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 }
 
 /* Modify the scrollbar */
