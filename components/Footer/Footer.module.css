@@ -33,6 +33,10 @@
     font-size: 1.5vh;
 }
 
+.link {
+    text-decoration: underline;
+}
+
 .alignRight {
     text-align: right;
 }
