@@ -116,6 +116,7 @@
     font-family: var(--font-family-roboto);
 
     color: var(--tertiary-dark);
+    background-color: var(--secondary);
 
     padding: .45rem;
     padding-left: 1rem;
@@ -133,6 +134,7 @@
     font-family: var(--font-family-roboto);
 
     color: var(--tertiary-dark);
+    background-color: var(--secondary);
 
     padding: .35rem;
     padding-left: 1rem;
@@ -141,6 +143,8 @@
     border-radius: .35rem;
     border: 1px solid var(--primary-dark);
     outline: none;
+
+    resize: vertical;
 }
 
 .button {
