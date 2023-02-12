@@ -1,0 +1,62 @@
+.card {
+    /* background-color: var(--primary-light); */
+
+    min-height: 300px;
+    height: auto;
+
+    max-width: 250px;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    max-width: 160px;
+    width: auto;
+
+    max-height: 160px;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+.name {
+    font-family: var(--font-family-roboto);
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+
+    color: var(--tertiary-dark);
+
+    margin-top: .75rem;
+}
+
+.position {
+    font-family: var(--font-family-roboto);
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-style: normal;
+
+    color: var(--tertiary-dark);
+
+    margin-top: -.25rem;
+}
+
+.description {
+    font-family: var(--font-family-roboto);
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+
+    color: var(--tertiary-darker);
+
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+
+    width: 90%;
+
+    text-align: center;
+}
