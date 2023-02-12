@@ -7,6 +7,9 @@ import { useState } from 'react'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import Image from 'next/image'
+import Logo from 'public/logo512.png'
+
 const Nav = () => {
 
     const [expanded, setExpanded] = useState(false)
@@ -14,8 +17,17 @@ const Nav = () => {
     return (
 
         <nav className={styles.nav}>
-            <div className={styles.titleWrapper}>
-                <NavTitle title="Community Connector" />
+            <div className={styles.firstNavSection}>
+                <div className={styles.logoWrapper}>
+                    <Image
+                        src={Logo}
+                        alt='Community Connector'
+                        className={styles.logo}
+                    />
+                </div>
+                <div className={styles.titleWrapper}>
+                    <NavTitle title="Community Connector" />
+                </div>
             </div>
 
             <div>

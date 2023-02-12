@@ -27,6 +27,24 @@
 
 }
 
+.firstNavSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoWrapper {
+    position: relative;
+    top: 2px;
+    width: 70px;
+}
+
+.logo {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
 .titleWrapper {
     display: flex;
     align-items: center;
@@ -128,6 +146,10 @@
         padding-right: 4.5%;
 
         border-bottom: none;
+    }
+
+    .logoWrapper {
+        margin-right: 5px;
     }
 
     .list {
