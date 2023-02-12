@@ -71,6 +71,7 @@
   padding-right: 15vw;
 }
 
+/* For mobile reduce padding */
 @media screen and (max-width: 768px) {
   .page {
     padding-left: 2vw;
