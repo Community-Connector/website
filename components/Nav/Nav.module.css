@@ -56,22 +56,25 @@
 .item {
     padding: 0 1rem;
 
-    color: var(--secondary);
-
-    text-decoration: underline;
-    text-decoration-color: var(--primary-light);
-    text-decoration-thickness: 3px;
-    text-underline-offset: 4px;
+    color: var(--primary-light);
 
     font-size: 1.05rem;
 
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+
     transition: all 0.1s ease-in-out;
+}
+
+.itemText {
+    color: var(--secondary);
 }
 
 .item:hover {
     padding-top: 5px;
 
-    text-decoration-color: var(--primary-dark);
+    color: var(--primary-dark);
 }
 
 .placeholder {

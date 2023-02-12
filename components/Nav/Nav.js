@@ -70,7 +70,7 @@ const NavItem = ({ name, link }) => {
         return (
             <li className={styles.item}>
                 <a href={link} className={styles.link}>
-                    {name}
+                    <span className={styles.itemText}>{name}</span>
                 </a>
             </li>
         )
