@@ -35,6 +35,7 @@ export default function App({ Component, pageProps }) {
     <>
     <Head>
       <title>{title}</title>
+      <link rel="shortcut icon" href="/logo192.png" />
     </Head>
       <Nav />
       <NavPlaceholder />
