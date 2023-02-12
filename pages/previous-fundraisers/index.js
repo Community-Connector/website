@@ -3,7 +3,7 @@ import PageTitle from "@/components/PageTitle/PageTitle"
 const PreviousFundraisers = () => {
     return (
         <div className="page">
-            <PageTitle title="Previous Fundraisers" />
+            <PageTitle>Previous Fundraisers</PageTitle>
         </div>
     )
 }
