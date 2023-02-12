@@ -23,6 +23,8 @@
 
     border-radius: 1rem;
     margin-top: 2rem;
+
+    width: 60vw;
 }
 
 .subTitle {
@@ -45,13 +47,45 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 
-    width: 35vw;
-
     text-align: center;
+
+    width: 80%;
+}
+
+.teamContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1rem;
+
+    max-width: 70vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .section {
+        width: 80vw;
+
+        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .teamContainer {
+        max-width: 80vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .text {
-        width: 80vw;
+    .section {
+        width: 90vw;
+    }
+
+    .teamContainer {
+        max-width: 90vw;
     }
 }
