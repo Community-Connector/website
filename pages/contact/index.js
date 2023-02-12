@@ -18,7 +18,7 @@ const Contact = () => {
 
                 </div>
 
-                <div className={styles.section}>
+                <div className={`${styles.section} ${styles.marginBottom}`}>
                     <h1 className={styles.subTitle}>Connect With Us</h1>
 
                     <p className={styles.text}>
