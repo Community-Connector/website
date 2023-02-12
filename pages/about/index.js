@@ -6,7 +6,7 @@ const About = () => {
 
     return (
         <div className="page">
-            <PageTitle title="About Us" />
+            <PageTitle>About Us</PageTitle>
 
             <main className={styles.container}>
 
