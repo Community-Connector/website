@@ -34,6 +34,7 @@ const About = () => {
     return (
         <div className="page aspect">
             <main className={styles.container}>
+
                 <div className={styles.section}>
                     <h1 className={styles.subTitle}>Who are we?</h1>
 
@@ -62,7 +63,7 @@ const About = () => {
                             )
                         })}
                     </div>
-
+                    
                 </div>
 
             </main>
