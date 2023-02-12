@@ -1,3 +1,50 @@
+.introSection {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--secondary-dark);
+
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 2rem auto;
+
+    border-radius: 1rem;
+
+    font-family: var(--font-family-roboto);
+
+    width: 60vw;
+}
+
+.subTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: normal;
+
+    color: var(--primary);
+
+    margin-top: 1rem;
+}
+
+.introText {
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-style: normal;
+
+    color: var(--tertiary-dark);
+
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+
+    text-align: center;
+
+    width: 80%;
+    line-height: 1.5rem;
+}
+
 .fundraiserListing {
     display: flex;
     align-items: center;
@@ -63,6 +110,26 @@
 
     .fundraiserDescription {
         margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .introSection {
+        width: 80vw;
+
+        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .subTitle {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introSection {
+        width: 90vw;
     }
 }
 

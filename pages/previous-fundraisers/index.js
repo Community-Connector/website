@@ -27,6 +27,20 @@ const FundraiserListing = ({name, children, image, image_alt, alternate_row = fa
 const PreviousFundraisers = () => {
     return (
         <div className="page">
+
+            <div className={styles.introSection}>
+                <h1 className={styles.subTitle}>Past Fundraisers</h1>
+
+                <p className={styles.introText}>
+                    Our non-profit organization was founded with the aim of supporting struggling families in the community
+                    and making a positive impact during these challenging times. Here, you can learn about the various fundraising
+                    initiatives that we have organized in the past and the impact they have had on our community. We are
+                    proud of our efforts and would like to thank everyone who has supported us in our mission. Your generosity
+                    has made a real difference in the lives of many and we couldn't have done it without you.
+                </p>
+
+            </div>
+
             <FundraiserListing name="Afghanistan Relief Fund" image={AfghanFlyer} image_alt="Afghanistan Relief Flyer">
                 Provided food parcels that consisted of staple foods of the region including rice, wheat, and beans that sustained 1 family for an entire month.
                 Raised $14,000, and sent 1400 food parcels in the 1st quarter of 2022.

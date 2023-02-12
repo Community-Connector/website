@@ -73,6 +73,10 @@
   padding-right: 15vw;
 }
 
+#__next {
+  background-color: var(--secondary);
+}
+
 /* For mobile reduce padding */
 @media screen and (max-width: 768px) {
   .aspect {
