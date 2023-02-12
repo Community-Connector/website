@@ -14,19 +14,19 @@ const About = () => {
         {
             name: "Kumel Hasni",
             position: "Co-Founder",
-            imageSrc: "https://warm-kashata-49ba24.netlify.app/img/kumel.png",
+            imageSrc: "https://rekompile.org/_next/image?url=%2Fteam%2Fkumel%20hasni.png&w=1920&q=75",
             description: "Add your description here."
         },
         {
             name: "Zack Ghanbari",
             position: "Co-Director of Technology",
-            imageSrc: "https://warm-kashata-49ba24.netlify.app/img/zack.jpeg",
+            imageSrc: "https://rekompile.org/_next/image?url=%2Fteam%2Fzackaria%20ghanbari.jpg&w=1920&q=75",
             description: "Add your description here."
         },
         {
             name: "Ali Rastegar",
             position: "Co-Director of Technology",
-            imageSrc: "https://warm-kashata-49ba24.netlify.app/img/alir.jpeg",
+            imageSrc: "https://rekompile.org/_next/image?url=%2Fteam%2Fali%20rastegar.png&w=1920&q=75",
             description: "Add your description here."
         }
     ]
@@ -63,7 +63,7 @@ const About = () => {
                             )
                         })}
                     </div>
-                    
+
                 </div>
 
             </main>
