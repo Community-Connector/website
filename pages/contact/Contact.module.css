@@ -1,0 +1,196 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-family-roboto);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--secondary-dark);
+
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    width: 60vw;
+}
+
+.subTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: normal;
+
+    color: var(--primary);
+
+    margin-top: 1rem;
+}
+
+.text {
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-style: normal;
+
+    color: var(--tertiary-dark);
+
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+
+    text-align: center;
+
+    width: 80%;
+    line-height: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.socials > a {
+    cursor: pointer;
+}
+
+.socials > a > .icon {
+    border-radius: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: .75rem;
+
+    background-color: var(--secondary);
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    width: 60%;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+    text-align: left;
+
+    width: 100%;
+}
+
+.formGroup > label {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+
+    color: var(--primary);
+
+    margin-bottom: .12rem;
+}
+
+.formGroup > input {
+    font-size: .9rem;
+    font-weight: normal;
+    font-style: normal;
+    font-family: var(--font-family-roboto);
+
+    color: var(--tertiary-dark);
+
+    padding: .45rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-radius: .35rem;
+    border: 1px solid var(--primary-dark);
+    outline: none;
+}
+
+.formGroup > textarea {
+    font-size: .9rem;
+    font-weight: normal;
+    font-style: normal;
+    font-family: var(--font-family-roboto);
+
+    color: var(--tertiary-dark);
+
+    padding: .35rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-radius: .35rem;
+    border: 1px solid var(--primary-dark);
+    outline: none;
+}
+
+.button {
+    font-size: .9rem;
+    font-weight: 600;
+    font-style: normal;
+
+    padding: .65rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-radius: .35rem;
+    border: none;
+    outline: none;
+
+    background-color: var(--primary);
+    color: var(--secondary);
+
+    cursor: pointer;
+    width: 60%;
+
+    transition: all .2s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--primary-dark);
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 1024px) {
+    .section {
+        width: 80vw;
+
+        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        width: 90vw;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
