@@ -2,7 +2,7 @@ import PageTitle from "@/components/PageTitle/PageTitle"
 
 const PreviousFundraisers = () => {
     return (
-        <div>
+        <div className="page">
             <PageTitle title="Previous Fundraisers" />
         </div>
     )

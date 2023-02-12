@@ -3,7 +3,7 @@ import PageTitle from "@/components/PageTitle/PageTitle"
 const Contact = () => {
 
     return (
-        <div>
+        <div className="page">
             <PageTitle title="Contact Us" />
         </div>
     )

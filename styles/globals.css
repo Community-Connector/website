@@ -62,6 +62,10 @@
 
 .page {
   background-color: var(--secondary);
+
+  min-height: 86vh;
+
+  height: auto;
 }
 
 /* Modify the scrollbar */
