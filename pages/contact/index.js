@@ -28,7 +28,7 @@ const Contact = () => {
                     <div className={styles.socials}>
 
                         <a
-                        href="https://www.facebook.com"
+                        href={process.env.FACEBOOK_URL}
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -41,7 +41,7 @@ const Contact = () => {
                         </a>
 
                         <a
-                        href="https://www.instagram.com"
+                        href={process.env.INSTAGRAM_URL}
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -54,7 +54,7 @@ const Contact = () => {
                         </a>
                         
                         <a
-                        href="https://www.linkedin.com"
+                        href={process.env.LINKEDIN_URL}
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -126,6 +126,5 @@ const ContactForm = () => {
         </form>
     )
 }
-
 
 export default Contact
