@@ -47,28 +47,62 @@ const About = () => {
 
                 </div>
 
-                <div className={styles.section}>
+                <div className={`${styles.section} ${styles.marginBottom}`}>
                     <h1 className={styles.subTitle}>Meet our team</h1>
 
-                    <div className={styles.teamContainer}>
-                        {teamMembers.map((member, index) => {
-                            return (
-                                <TeamMemberCard
-                                    key={index}
-                                    name={member.name}
-                                    position={member.position}
-                                    imageSrc={member.imageSrc}
-                                    description={member.description}
-                                />
-                            )
-                        })}
-                    </div>
+                    <TeamMemberDisplay teamMembers={teamMembers} />
 
                 </div>
 
             </main>
         </div>
     )
+}
+
+
+// don't know if this is the best way to do this, 
+// but it works
+
+// To modify the number of team members per row, 
+// change the value of perRow
+const TeamMemberDisplay = ({ teamMembers }) => {
+
+    const perRow = 2
+
+    let rows = []
+
+    for (let i = 0; i < teamMembers.length; i+=perRow) {
+        let cols = []
+
+        for (let j = 0; j < perRow; j++) {
+            cols.push(
+                <TeamMemberCard
+                name={teamMembers[i+j].name}
+                position={teamMembers[i+j].position}
+                imageSrc={teamMembers[i+j].imageSrc}
+                description={teamMembers[i+j].description}
+                />
+            )
+        }
+
+        rows.push(cols)
+        cols = []
+    }
+
+    return (
+        <div className={styles.teamContainer}>
+            {rows.map((row, index) => {
+                return (
+                    <div className={styles.teamMemberRow}>
+                        {row}
+                    </div>
+                )
+            }
+            )}
+        </div>
+    )
+            
+
 }
 
 export default About

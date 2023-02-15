@@ -1,9 +1,9 @@
 .card {
     /* background-color: var(--primary-light); */
 
-    min-height: 400px;
+    min-height: 300px;
     height: auto;
-    max-height: 500px;
+    max-height: 375px;
 
     min-width: 200px;
     width: auto;
