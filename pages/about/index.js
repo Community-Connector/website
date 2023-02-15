@@ -77,6 +77,7 @@ const TeamMemberDisplay = ({ teamMembers }) => {
         for (let j = 0; j < perRow; j++) {
             cols.push(
                 <TeamMemberCard
+                key={i+j}
                 name={teamMembers[i+j].name}
                 position={teamMembers[i+j].position}
                 imageSrc={teamMembers[i+j].imageSrc}
@@ -93,7 +94,9 @@ const TeamMemberDisplay = ({ teamMembers }) => {
         <div className={styles.teamContainer}>
             {rows.map((row, index) => {
                 return (
-                    <div className={styles.teamMemberRow}>
+                    <div 
+                    key={index}
+                    className={styles.teamMemberRow}>
                         {row}
                     </div>
                 )
