@@ -43,9 +43,14 @@
     justify-content: center;
     align-items: center;
 
-    padding-top: .5rem;
+    padding-top: .75rem;
+    padding-bottom: .25rem;
 
     cursor: pointer;
+}
+
+.logoWrapper:hover .fill {
+    fill: var(--primary-light);
 }
 
 .titleWrapper {
@@ -145,6 +150,8 @@
 
 .fill {
     fill: var(--secondary);
+
+    transition: all 0.35s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
