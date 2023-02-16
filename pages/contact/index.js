@@ -1,5 +1,7 @@
 import styles from './Contact.module.css'
 
+import { useState } from 'react'
+
 const Contact = () => {
 
     return (
@@ -77,8 +79,50 @@ const Contact = () => {
 }
 
 const ContactForm = () => {
+
+    const [submitting, setSubmitting] = useState(false)
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        setSubmitting(true)
+
+        const name = e.target.name.value
+        const email = e.target.email.value
+        const message = e.target.message.value
+
+
+        const data = {
+            name,
+            email,
+            message
+        }
+
+        fetch('/api/mail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(JSON.stringify(data))
+            setSubmitting(false)
+        })
+        .catch(err => {
+            console.log(err)
+            setSubmitting(false)
+        })
+
+    }
+
+
     return (
-        <form className={styles.form}>
+        <form 
+        className={styles.form}
+        onSubmit={(e) => handleSubmit(e)}
+        >
 
             <div className={styles.formGroup}>
                 <label 
@@ -120,8 +164,9 @@ const ContactForm = () => {
             </div>
 
             <button 
-            type="submit" 
-            className={styles.button}>Submit</button>
+            type="submit"
+            disabled={submitting}
+            className={styles.button}>{ (submitting) ? 'Sending..' : 'Submit' }</button>
 
         </form>
     )
