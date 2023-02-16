@@ -35,14 +35,17 @@
 
 .logoWrapper {
     position: relative;
-    top: 2px;
-    width: 70px;
-}
 
-.logo {
-    object-fit: contain;
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: 7vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: .5rem;
+
+    cursor: pointer;
 }
 
 .titleWrapper {
@@ -138,6 +141,10 @@
 
 .rotate {
     transform: rotate(90deg);
+}
+
+.fill {
+    fill: var(--secondary);
 }
 
 @media screen and (max-width: 768px) {
