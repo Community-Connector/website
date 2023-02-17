@@ -180,6 +180,56 @@
     margin-bottom: 1rem;
 }
 
+.alert {
+    border: 2px solid;
+    border-radius: .35rem;
+
+    padding: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    width: 58%;
+
+    display: none;
+}
+
+.alertTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+
+    width: 100%;
+    border-bottom: 1px solid;
+    padding-bottom: .35rem;
+
+    margin-bottom: .5rem;
+
+}
+
+.alertMessage {
+    font-size: 1.05rem;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.showAlert {
+    display: block;
+}
+
+.success {
+    background-color: rgba(51, 204, 51, 0.3);
+    color: rgba(22, 117, 22, 0.9);
+
+    border-color: rgba(24, 128, 24, 0.7);
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.418);
+    color: rgba(102, 0, 0, 0.9);
+
+    border-color: rgba(102, 0, 0, 0.7);
+}
+
 @media screen and (max-width: 1024px) {
     .section {
         width: 80vw;
@@ -192,6 +242,10 @@
     .form {
         width: 90%;
     }
+
+    .alert {
+        width: 78%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -201,5 +255,9 @@
 
     .form {
         width: 100%;
+    }
+
+    .alert {
+        width: 95%;
     }
 }

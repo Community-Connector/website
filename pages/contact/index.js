@@ -4,6 +4,13 @@ import { useState } from 'react'
 
 const Contact = () => {
 
+    const [alertProps, setAlertProps] = useState({
+        type: 'success',
+        title: 'Success!',
+        message: 'Your message has been sent successfully.',
+        show: false
+    })
+
     return (
         <div className="page aspect">
             
@@ -16,7 +23,17 @@ const Contact = () => {
                         If you have any questions or concerns, please feel free to contact us. We will get back to you as soon as possible.
                     </p>
 
-                    <ContactForm />
+                    <Alert 
+                    type={alertProps.type}
+                    title={alertProps.title}
+                    message={alertProps.message}
+                    show={alertProps.show}
+                    />
+
+                    <ContactForm 
+                    alertProps={alertProps}
+                    setAlertProps={setAlertProps}
+                    />
 
                 </div>
 
@@ -78,18 +95,46 @@ const Contact = () => {
     )
 }
 
-const ContactForm = () => {
+const ContactForm = ({ alertProps, setAlertProps }) => {
 
     const [submitting, setSubmitting] = useState(false)
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
         setSubmitting(true)
 
+        let errors = []
+
         const name = e.target.name.value
         const email = e.target.email.value
         const message = e.target.message.value
+
+        if (!name) {
+            errors.push('Please enter your name.')
+        }
+
+        if (!email) {
+            errors.push('Please enter your email address.')
+        }
+
+        if (!message) {
+            errors.push('Please enter a message.')
+        }
+
+        if (errors.length > 0) {
+            setSubmitting(false)
+
+            setAlertProps({
+                type: 'error',
+                title: 'Error Sending Message',
+                message: "You have not filled out the form properly. " + errors.join(' '),
+                show: true
+            })
+
+            return
+        }
 
 
         const data = {
@@ -107,16 +152,28 @@ const ContactForm = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(JSON.stringify(data))
             setSubmitting(false)
+
+            setAlertProps({
+                type: data.type,
+                title: data.title,
+                message: data.message,
+                show: true
+            })
         })
         .catch(err => {
             console.log(err)
             setSubmitting(false)
+
+            setAlertProps({
+                type: 'error',
+                title: 'An Error Occurred',
+                message: 'There was an error while sending your message. Please try again later.',
+                show: true
+            })
         })
 
     }
-
 
     return (
         <form 
@@ -169,6 +226,16 @@ const ContactForm = () => {
             className={styles.button}>{ (submitting) ? 'Sending..' : 'Submit' }</button>
 
         </form>
+    )
+}
+
+const Alert = ({ type, title, message, show }) => {
+
+    return (
+        <div className={`${styles.alert} ${styles[type]} ${(show) ? styles.showAlert : ''}`}>
+            <h3 className={styles.alertTitle}>{title}</h3>
+            <p className={styles.alertMessage}>{message}</p>
+        </div>
     )
 }
 
