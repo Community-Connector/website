@@ -45,7 +45,7 @@ const Contact = () => {
                     </p>
 
                     <div className={styles.socials}>
-
+                        {/* 
                         <a
                         href={process.env.FACEBOOK_URL}
                         target="_blank"
@@ -57,7 +57,9 @@ const Contact = () => {
                             alt='Facebook'
                             width={70}
                             height={70} />
-                        </a>
+                        </a> 
+
+                        */}
 
                         <a
                         href={process.env.INSTAGRAM_URL}
