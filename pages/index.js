@@ -1,5 +1,9 @@
 import Head from 'next/head'
 
+import styles from './Home.module.css'
+
+import Community from '@/svgs/Community/Community'
+
 const Home = () => {
 
   return (
@@ -10,9 +14,26 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     
+      <main>
+
+        <div className={styles.heading}>
+          <div className={styles.titleContainer}>
+            <h1 className={styles.title}>Community Connector</h1>
+            <h2 className={styles.subtitle}>Connecting community to start giving..</h2>
+          </div>
+
+          <div className={styles.imageContainer}>
+            <Community primaryColor="#EE6F1D" secondaryColor="#2c6d89" />
+          </div>
+
+        </div>
+
+      </main>
+
+
     </div>
   )
 }
+
 
 export default Home

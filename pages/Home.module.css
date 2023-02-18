@@ -1,0 +1,88 @@
+.heading {
+    display: flex;
+    flex-direction: row;
+
+    padding: 1rem;
+
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.title {
+    font-family: var(--font-family-rubik);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--tertiary);
+}
+
+.subtitle {
+    font-family: var(--font-family-roboto);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.imageContainer {
+    width: 35%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+    .imageContainer {
+        width: 45%;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .imageContainer {
+        width: 55%;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        flex-direction: column-reverse;
+
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .imageContainer {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .imageContainer {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+}
