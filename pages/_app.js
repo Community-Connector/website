@@ -29,19 +29,23 @@ export default function App({ Component, pageProps }) {
 
     else if (end === 'contact')
       setTitle('Contact')
+    else
+      setTitle('Community Connector')
 
   }, [router.pathname])
 
   return (
     <>
-    <Head>
-      <title>{title}</title>
-      <link rel="shortcut icon" href="/logo192.png" />
-    </Head>
+      <Head>
+        <title>{title}</title>
+        <link rel="shortcut icon" href="/logo192.png" />
+      </Head>
+
       <Nav />
       <NavPlaceholder />
       <Component {...pageProps} />
       <Footer />
+
     </>
   )
 }
