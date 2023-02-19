@@ -95,6 +95,8 @@
 
 .itemText {
     color: var(--secondary);
+
+    line-height: 1.5rem;
 }
 
 .item:hover {
@@ -152,6 +154,13 @@
     fill: var(--secondary);
 
     transition: all 0.35s ease-in-out;
+}
+
+@media screen and (max-width: 1305px) {
+    .nav {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 @media screen and (max-width: 768px) {

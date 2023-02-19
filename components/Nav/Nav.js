@@ -28,7 +28,7 @@ const Nav = () => {
                 <NavList 
                 expanded={expanded}
                 items={[
-                    { name: 'Syria Relief Fund', link: '/fundraiser' },
+                    { name: `Syria Relief${String.fromCharCode(160)}Fund`, link: '/fundraiser' },
                     { name: 'Previous Fundraisers', link: '/previous-fundraisers' },
                     { name: 'About', link: '/about' },
                     { name: 'Contact', link: '/contact' },
