@@ -174,8 +174,25 @@
         justify-content: space-around;
 
         padding-left: 0rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .statisticsSection > .statistic {
+        align-items: center;
+    }
+
+    .statisticsSection > .statistic > .info > .number {
+        font-size: 2rem;
+    }
+
+    .statisticsSection > .statistic > .info > .text {
+        font-size: 1rem;
+    }
+
+    .statisticsSection > .statistic > .icon {
+        width: 3rem;
+        height: 3rem;
     }
 }
 
@@ -190,6 +207,23 @@
 
     .subtitle {
         font-size: 1.125rem;
+    }
+
+    .statisticsSection > .statistic {
+        align-items: center;
+    }
+
+    .statisticsSection > .statistic > .info > .number {
+        font-size: 1.5rem;
+    }
+
+    .statisticsSection > .statistic > .info > .text {
+        font-size: .9rem;
+    }
+
+    .statisticsSection > .statistic > .icon {
+        width: 3rem;
+        height: 3rem;
     }
 }
 
@@ -224,6 +258,25 @@
         flex-direction: column;
 
         padding-left: .5rem;
+
+        gap: 1.5rem;
+    }
+
+    .statisticsSection > .statistic {
+        align-items: center;
+    }
+
+    .statisticsSection > .statistic > .info > .number {
+        font-size: 2.25rem;
+    }
+
+    .statisticsSection > .statistic > .info > .text {
+        font-size: 1.25rem;
+    }
+
+    .statisticsSection > .statistic > .icon {
+        width: 4rem;
+        height: 4rem;
     }
 }
 
@@ -233,7 +286,7 @@
     }
 
     .title {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
 }
