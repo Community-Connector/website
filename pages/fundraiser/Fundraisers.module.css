@@ -1,0 +1,154 @@
+.banner {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerBackground {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: brightness(80%)
+}
+
+.bannerContent {
+    position: relative;
+    font-family: var(--font-family-rubik);
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 50%;
+}
+
+.bannerTitle {
+    font-size: 70px;
+}
+
+.bannerDescription {
+    font-size: 30px;
+}
+
+.contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+
+    height: 500px;
+    color: var(--tertiary-dark);
+}
+
+.textSection {
+    flex-basis: 50%;
+    margin-right: 20px;
+}
+
+.contentTitle {
+    display: block;
+    font-family: var(--font-family-rubik);
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.contentDescription {
+    font-family: var(--font-family-roboto);
+    font-size: 20px;
+}
+
+.button {
+    display: block;
+    width: 35%;
+
+    border: none;
+    border-radius: 0.35rem;
+
+    background-color: var(--primary);
+    color: var(--secondary);
+
+    font-family: var(--font-family-roboto);
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    padding: 0.5rem;
+    margin-top: 1.25rem;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--primary-dark);
+
+    /* add a light black shadow on the bottom of the button */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.imageContainer {
+    position: relative;
+    flex-basis: 40%;
+}
+
+.image {
+    object-fit: contain;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .bannerTitle {
+        font-size: 50px;
+    }
+    
+    .bannerDescription {
+        font-size: 30px;
+    }
+
+
+    .contentContainer {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .textSection {
+        margin-right: 0;
+    }
+
+    .contentTitle {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .button {
+        margin: 10px auto;
+    }
+
+    .imageContainer {
+        margin-top: 20px;
+        flex-basis: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contentContainer {
+        margin: 10px;
+    }
+
+    .contentTitle {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bannerTitle {
+        font-size: 40px;
+    }
+    
+    .bannerDescription {
+        font-size: 20px;
+    }
+}
