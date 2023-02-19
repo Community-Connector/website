@@ -28,7 +28,7 @@ const Nav = () => {
                 <NavList 
                 expanded={expanded}
                 items={[
-                    { name: 'Fundraisers', link: '/' },
+                    { name: 'Fundraisers', link: '/fundraisers' },
                     { name: 'Previous Fundraisers', link: '/previous-fundraisers' },
                     { name: 'About', link: '/about' },
                     { name: 'Contact', link: '/contact' },

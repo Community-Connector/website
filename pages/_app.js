@@ -18,8 +18,9 @@ export default function App({ Component, pageProps }) {
 
     const end = router.pathname.split('/').pop()
 
-    if (end == '')
+    if (end == 'fundraisers')
       setTitle('Fundraisers')
+
     else if (end === 'previous-fundraisers')
       setTitle('Previous Fundraisers')
 
