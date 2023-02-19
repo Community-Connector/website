@@ -45,6 +45,7 @@
   --primary: #EE6F1D;
   --primary-dark: #BE5900;
   --primary-light: #FFA35C;
+  --primary-soft: #f1843b;
 
   --secondary: #fbfdfb;
   --secondary-dark: #eeeeee;
@@ -80,8 +81,8 @@
 /* For mobile reduce padding */
 @media screen and (max-width: 768px) {
   .aspect {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
 }
 
