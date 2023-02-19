@@ -15,7 +15,7 @@ const Fundraiser = () => {
                 </div>
             </div>
 
-            <div className={styles.contentContainer}>
+            <div className={`${styles.contentContainer} aspect`}>
                 <div className={styles.textSection}>
                     <h2 className={styles.contentTitle}>Donate to the cause</h2>
                     <p className={styles.contentDescription}>
