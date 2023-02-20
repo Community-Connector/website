@@ -7,6 +7,9 @@ import Questions from '@/svgs/Questions/Questions'
 
 import { useRouter } from 'next/router'
 
+import { faHandHoldingDollar, faHandshakeSimple, faUserGroup } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Home = () => {
 
   const router = useRouter()
@@ -128,9 +131,52 @@ const Home = () => {
           </div>
         </div>
 
+        <div className={styles.helpSection}>
+
+          <h2>How you can help!</h2>
+
+          <div className={styles.helpCards}>
+            <HelpCard
+              title="Donate"
+              description="Donate to our current fundraiser to help us continue our mission of providing basic necessities to those in need."
+              icon={<FontAwesomeIcon icon={faHandHoldingDollar} size="3x" color="#EE6F1D" />}
+            />
+
+            <HelpCard
+              title="Volunteer"
+              description="Volunteer to help us with our fundraisers and other events. We are always looking for more people to help us!"
+              icon={<FontAwesomeIcon icon={faHandshakeSimple} size="3x" color="#EE6F1D" />}
+            />
+
+            <HelpCard
+              title="Spread the word"
+              description="Help us spread the word about our mission and our fundraisers. The more people we can reach, the more we can help!"
+              icon={<FontAwesomeIcon icon={faUserGroup} size="3x" color="#EE6F1D" />}
+            />
+
+
+          </div>
+
+        </div>
+
       </main>
 
 
+    </div>
+  )
+}
+
+const HelpCard = ({ title, description, icon }) => {
+  return (
+    <div className={styles.helpCard}>
+      <div className={styles.helpCardIcon}>
+        {icon}
+      </div>
+
+      <div className={styles.helpCardText}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
     </div>
   )
 }

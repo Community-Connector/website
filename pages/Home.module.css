@@ -213,6 +213,93 @@
     padding: 1rem;
 }
 
+.helpSection {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+.helpSection > h2 {
+    font-size: 2.5rem;
+
+    font-family: var(--font-family-rubik);
+    font-weight: 600;
+    color: var(--tertiary);
+}
+
+.helpCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    gap: 1rem;
+
+    justify-content: space-around;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.helpCard {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 30%;
+
+    /* background-color: var(--secondary-dark); */
+    border-radius: 1rem;
+
+    padding: 1rem;
+}
+
+.helpCardIcon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.helpCard > .helpCardText {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    gap: 0.25rem;
+
+    margin-top: 1rem;
+}
+
+.helpCard > .helpCardText > h3 {
+    font-size: 1.5rem;
+
+    font-family: var(--font-family-rubik);
+    font-weight: 600;
+    color: var(--tertiary);
+
+    text-align: center;
+}
+
+.helpCard > .helpCardText > p {
+    font-size: 1rem;
+
+    font-family: var(--font-family-roboto);
+    font-weight: 400;
+    color: var(--tertiary-dark);
+
+    text-align: center;
+
+    width: 90%;
+}
+
 
 @media screen and (max-width: 1280px) {
     .imageContainer {
@@ -311,6 +398,20 @@
     .moreAbout > .moreAboutImage {
         width: 50%;
         height: 50%;
+    }
+
+    .helpSection > h2 {
+        font-size: 2rem;
+
+        text-align: center;
+    }
+
+    .helpCards {
+        flex-direction: column;
+    }
+
+    .helpCard {
+        width: 100%;
     }
 }
 
