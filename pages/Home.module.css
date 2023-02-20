@@ -145,6 +145,64 @@
     fill: var(--tertiary-dark);
 }
 
+.moreAbout {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 8vh;
+    margin-bottom: 2rem;
+
+    gap: 1rem;
+
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--secondary-dark);
+    border-radius: 1rem;
+
+    border-bottom: 0.25rem solid var(--tertiary);
+}
+
+.moreAbout > .moreAboutText {
+    width: 65%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.moreAbout > .moreAboutText > h3 {
+    font-size: 2rem;
+
+    font-family: var(--font-family-rubik);
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.moreAbout > .moreAboutText > p {
+    font-size: 1.25rem;
+
+    font-family: var(--font-family-roboto);
+    font-weight: 400;
+    color: var(--tertiary-dark);
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.moreAbout > .moreAboutImage {
+    width: 25%;
+    height: 100%;
+
+    padding: 1rem;
+}
+
 
 @media screen and (max-width: 1280px) {
     .imageContainer {

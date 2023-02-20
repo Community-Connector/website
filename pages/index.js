@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styles from './Home.module.css'
 
 import Community from '@/svgs/Community/Community'
+import Questions from '@/svgs/Questions/Questions'
 
 import { useRouter } from 'next/router'
 
@@ -92,10 +93,36 @@ const Home = () => {
             <h3>What we do..</h3>
 
             <p>
-              Our mission is to... dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit. Lorem ipsun dolor sit amet, consectetur adipiscing elit.
+              Our mission at Community Connector is to provide basic necessities to 
+              anyone in need regardless of their race, gender, ethnicity, previous 
+              financial situation, or place of residence. Our goal is to work towards 
+              a world where every person has access to basic foodstuffs, medicine, and 
+              overall necessities.
             </p>
 
           </div>
+
+        </div>
+
+        <div className={styles.moreAbout}>
+          <div className={styles.moreAboutText}>
+
+            <h3>More about Community Connector..</h3>
+
+            <p>
+              Community Connector was founded in the midst of the COVID-19 Pandemic by 2 
+              high schoolers who saw the dire need of assistance for local families financially 
+              struggling during the trying times. As need grew, Community Connector expanded their 
+              grasp to the greater Bay Area, and then began to work with organizations such as the Zahra 
+              Trust Fund and the Givelight Foundation to reach a greater number of people.
+            </p>
+
+          </div>
+
+          <div className={styles.moreAboutImage}>
+            <Questions primaryColor="#EE6F1D" />
+          </div>
+
 
         </div>
 
