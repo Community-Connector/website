@@ -42,12 +42,39 @@
     margin-top: 1rem;
 
     cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    transition: all 0.2s ease-in-out;
 }
 
-.viewFundraiser > .arrows {
-    font-weight: 600;
+.viewFundraiser:hover {
+    text-shadow: 0 2px 0.1rem rgba(0, 0, 0, 0.25);
+}
+
+.viewFundraiser:hover > .arrowsSpan > #arrows {
+    transform: translateX(0.5rem);
+}
+
+.viewFundraiser > .arrowsSpan {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.viewFundraiser > .arrowsSpan > #arrows {
+    width: 1.75rem;
+    height: 1.75rem;
 
     padding-left: 0.75rem;
+
+    fill: var(--primary);
+
+    transition: all 0.2s ease-in-out;
 }
 
 .imageContainer {
