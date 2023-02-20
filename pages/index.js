@@ -10,9 +10,69 @@ import { useRouter } from 'next/router'
 import { faHandHoldingDollar, faHandshakeSimple, faUserGroup } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import { useState, useEffect } from 'react'
+
 const Home = () => {
 
   const router = useRouter()
+
+  const [statNumbers, setStatNumbers] = useState({
+    money: 0,
+    fundraisers: 0,
+    people: 0
+  })
+
+  // create a function to change the numbers rapidly and smoothly
+  // before the page loads, the numbers will be 0 and then they will change to the actual numbers
+  // this will make the page look more dynamic
+  const changeNumbers = () => {
+    let money = 0
+    let fundraisers = 0
+    let people = 0
+
+    const moneyInterval = setInterval(() => {
+      money += 100
+      setStatNumbers({
+        money: money,
+        fundraisers: fundraisers,
+        people: people
+      })
+      if (money === 25000) {
+        clearInterval(moneyInterval)
+      }
+    }, 10)
+
+    const fundraisersInterval = setInterval(() => {
+      fundraisers += 1
+      setStatNumbers({
+        money: money,
+        fundraisers: fundraisers,
+        people: people
+      })
+
+      if (fundraisers === 5) {
+        clearInterval(fundraisersInterval)
+      }
+    }, 100)
+
+    const peopleInterval = setInterval(() => {
+      people += 50
+      setStatNumbers({
+        money: money,
+        fundraisers: fundraisers,
+        people: people
+      })
+
+      if (people === 10000) {
+        clearInterval(peopleInterval)
+      }
+    }, 10)
+  }
+
+  useEffect(() => {
+    changeNumbers()
+  }, [])
+
 
   return (
     <div className='page aspect flex'>
@@ -56,7 +116,7 @@ const Home = () => {
               </div>
 
               <div className={styles.info}>
-                <h3 className={styles.number}>$25,000+</h3>
+                <h3 className={styles.number}>${statNumbers.money}{(statNumbers.money === 25000) ? "+" : ""}</h3>
                 <p className={styles.text}>Fundraised</p>
               </div>
 
@@ -73,7 +133,7 @@ const Home = () => {
               </div>
 
               <div className={styles.info}>
-                <h3 className={styles.number}>5+</h3>
+                <h3 className={styles.number}>{statNumbers.fundraisers}{(statNumbers.fundraisers === 5) ? "+" : ""}</h3>
                 <p className={styles.text}>Fundraisers organized</p>
               </div>
 
@@ -90,7 +150,7 @@ const Home = () => {
               </div>
 
               <div className={styles.info}>
-                <h3 className={styles.number}>10,000+</h3>
+                <h3 className={styles.number}>{statNumbers.people}{(statNumbers.people === 10000) ? "+" : ""}</h3>
                 <p className={styles.text}>People positively impacted</p>
               </div>
 
