@@ -139,17 +139,17 @@ const Home = () => {
 
         <div className={styles.helpSection}>
 
-          <h2>How you can help!</h2>
+          <h2>Take action...</h2>
 
           <div className={styles.helpCards}>
             <HelpCard
-              title="Donate"
+              title="Make a donation"
               description="Donate to our current fundraiser to help us continue our mission of providing basic necessities to those in need."
               icon={<FontAwesomeIcon icon={faHandHoldingDollar} size="3x" color="#EE6F1D" />}
             />
 
             <HelpCard
-              title="Volunteer"
+              title="Be Part of the Solution"
               description="Volunteer to help us with our fundraisers and other events. We are always looking for more people to help us!"
               icon={<FontAwesomeIcon icon={faHandshakeSimple} size="3x" color="#EE6F1D" />}
             />
