@@ -47,10 +47,22 @@ const About = () => {
 
                 </div>
 
-                <div className={`${styles.section} ${styles.marginBottom}`}>
+                <div className={styles.section}>
                     <h1 className={styles.subTitle}>Meet our team</h1>
 
                     <TeamMemberDisplay teamMembers={teamMembers} />
+
+                </div>
+
+                <div className={`${styles.section} ${styles.marginBottom}`}>
+                    <h1 className={styles.subTitle}>Our Mission</h1>
+
+                    <p className={styles.text}>
+                    Our mission at Community Connector is to provide basic necessities to anyone in need regardless of their race, gender, 
+                    ethnicity, previous financial situation, or place of residence. Our goal is to work towards a world where every person 
+                    has access to basic foodstuffs, medicine, and overall necessities. We hope to achieve this by providing these
+                    necessities to those in need and by raising awareness of the issue. With your help, we can make a difference.
+                    </p>
 
                 </div>
 
