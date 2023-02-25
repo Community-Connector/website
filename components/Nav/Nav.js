@@ -100,8 +100,8 @@ const NavPlaceholder = () => {
 
 const HandShakeSymbol = ({ scale }) => {
 
-    let width = 620 * scale
-    let height = 344 * scale
+    let width = "6vh"
+    let height = "6vh"
 
     const router = useRouter()
 
