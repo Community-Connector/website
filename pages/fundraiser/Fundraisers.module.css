@@ -39,15 +39,17 @@
     align-items: center;
     justify-content: space-between;
 
-
     box-shadow: 0 -20px 10px 10px white;
 
-    height: 500px;
     color: var(--tertiary-dark);
 }
 
+.noShadow {
+    box-shadow: none;
+}
+
 .textSection {
-    flex-basis: 50%;
+    flex-basis: 55%;
     margin-right: 20px;
 }
 
@@ -61,11 +63,14 @@
 .contentDescription {
     font-family: var(--font-family-roboto);
     font-size: 20px;
+
+    line-height: 1.75rem;
 }
 
 .button {
     display: block;
-    width: 35%;
+
+    width: 100%;
 
     border: none;
     border-radius: 0.35rem;
@@ -78,7 +83,6 @@
     font-weight: 500;
 
     padding: 0.5rem;
-    margin-top: 1.25rem;
 
     cursor: pointer;
 
@@ -92,16 +96,76 @@
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
-.imageContainer {
+.statistics {
     position: relative;
-    flex-basis: 40%;
+    /* flex-basis: 50%; */
+
+
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: space-between; */
+    align-items: flex-end;
+
+    gap: 2rem;
 }
 
-.image {
-    object-fit: contain;
+.statistics > .statistic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 0.75rem;
+}
+
+.statistics > .statistic > svg {
+    height: 3rem;
+    width: 3rem;
+
+    fill: var(--primary);
+}
+
+.statistics > .statistic > h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--font-family-rubik);
+}
+
+.donateButton {
     width: 100%;
-    max-height: 300px;
-    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.donateButton > a {
+    width: 33%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paddingTop {
+    padding-top: 2rem;
+}
+
+.paddingBottom {
+    padding-bottom: 1rem;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.spaceBetween {
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 850px) {
@@ -114,8 +178,14 @@
     }
 
     .contentContainer {
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: auto;
+    }
+
+    .statistics {
+        align-items: center;
+
+        padding-bottom: 1rem;
     }
 
     .textSection {
@@ -127,8 +197,8 @@
         margin-top: 20px;
     }
 
-    .button {
-        margin: 10px auto;
+    .donateButton > a {
+        width: 100%;
     }
 
     .imageContainer {
@@ -145,14 +215,30 @@
     .contentTitle {
         font-size: 30px;
     }
+
+    .statistics > .statistic > h2 {
+        font-size: 1.25rem;
+    }
 }
 
 @media screen and (max-width: 450px) {
+
+    .banner {
+        height: 400px;
+    }
+
     .bannerTitle {
         font-size: 40px;
     }
     
     .bannerDescription {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .statistics > .statistic > h2 {
+        font-size: 1rem;
     }
 }
