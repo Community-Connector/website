@@ -53,7 +53,7 @@ const Fundraiser = () => {
                 </p>
 
                 <div className={styles.donateButton}>
-                    <Link href="/donate">
+                    <Link href="https://www.tinyurl.com/syria-fund" target='_blank'>
                         <button className={styles.button}>Donate</button>
                     </Link>
                 </div>
