@@ -8,7 +8,7 @@ const About = () => {
         {
             name: "Aalyan Aamir",
             position: "Co-Founder",
-            imageSrc: "https://warm-kashata-49ba24.netlify.app/img/aalyan.jpeg",
+            imageSrc: "https://raw.githubusercontent.com/Community-Connector/website/react-refactor/src/images/team/aalyan.jpg",
             description: "Mountain biker and snowboarder who hopes to major in physics. Aalyan is motivated to help  anyone in need any way he can."
         },
         {
