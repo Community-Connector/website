@@ -27,7 +27,7 @@ const About = () => {
             name: "Ali Rastegar",
             position: "Co-Director of Technology",
             imageSrc: "https://rekompile.org/_next/image?url=%2Fteam%2Fali%20rastegar.png&w=1920&q=75",
-            description: " Ali Rastegar is the Co-Director of Technology, because he co-des everyday 😀"
+            description: " Ali Rastegar is an aspiring data scientist and programmer who seeks to use his skills for social good."
         }
     ]
 
