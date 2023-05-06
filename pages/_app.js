@@ -39,6 +39,9 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>{title}</title>
         <link rel="shortcut icon" href="/logo192.png" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Community Connector is a non-profit aiming to provide basic necessities to anyone in need regardless of their race, gender, ethnicity, previous financial situation, or place of residence." />
       </Head>
 
       <Nav />
